@@ -1,0 +1,15 @@
+<!--<p>
+  profile works!
+</p>-->
+<html>
+  <h1>Profile Details</h1>
+  <h2>{{user.name}}</h2>
+  <h3>{{user.job}}</h3>
+  <button (click)="togglecheck()">Expand/Collapse</button>
+  <div *ngIf=!check>
+    <h3>{{user.address}}</h3>
+  <!--h4>{{user.phone}}</h4>-->
+  <p *ngFor="let phone of user.phone">{{phone}}</p>
+  </div>
+</html>
+
